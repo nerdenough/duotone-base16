@@ -182,7 +182,7 @@ function outputSchemeYml(colors) {
   console.log(chalk.magenta('Generated YAML:'));
   console.log(indent(schemeYaml, ' ', 4));
 
-  var ymlPath = 'base16-schemes/' + themeName + '.yml';
+  var ymlPath = 'base16-schemes/' + themeName + '.yaml';
 
   console.log(chalk.green('Writing ' + ymlPath));
   fs.writeFile(ymlPath, schemeYaml, function (err) {
